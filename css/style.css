@@ -1,0 +1,48 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+}
+
+.h-custom {
+height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #A5F8F5,  #EFFFFD);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+form{
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    background-size: 100%;
+}
